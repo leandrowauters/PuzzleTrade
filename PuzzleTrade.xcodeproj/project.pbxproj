@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92045B96BA5A4BBF4D44FCB8 /* Pods_PuzzleTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CBF8E2AB839CFA4DAB528B /* Pods_PuzzleTrade.framework */; };
+		A106D7AD62329F7A76039E76 /* Pods_PuzzleTradeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59338F4C04361ED09AEE730 /* Pods_PuzzleTradeTests.framework */; };
+		D5069F7823EA691500A14449 /* TradePuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5069F7723EA691500A14449 /* TradePuzzleViewController.swift */; };
+		D549B72C23E38FD00083D679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B72B23E38FD00083D679 /* AppDelegate.swift */; };
+		D549B72E23E38FD00083D679 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B72D23E38FD00083D679 /* SceneDelegate.swift */; };
+		D549B73323E38FD00083D679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D549B73123E38FD00083D679 /* Main.storyboard */; };
+		D549B73523E38FD20083D679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D549B73423E38FD20083D679 /* Assets.xcassets */; };
+		D549B73823E38FD20083D679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D549B73623E38FD20083D679 /* LaunchScreen.storyboard */; };
+		D549B74323E38FD20083D679 /* PuzzleTradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B74223E38FD20083D679 /* PuzzleTradeTests.swift */; };
+		D549B74E23E38FD20083D679 /* PuzzleTradeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B74D23E38FD20083D679 /* PuzzleTradeUITests.swift */; };
+		D566C64B23E9F12800B38765 /* PuzzlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */; };
+		D566C64D23E9F17B00B38765 /* DetailPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */; };
+		D566C64F23E9F22800B38765 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566C64E23E9F22800B38765 /* Puzzle.swift */; };
+		D57DEE2623E8D52E008C96FD /* LoginHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D57DEE2523E8D52E008C96FD /* LoginHelper */; };
+		D5CA96A023FF05010010ED1C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */; };
+		D5CA96A223FF08910010ED1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */; };
+		D5CA96A423FF0A440010ED1C /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */; };
+		D5CA96A623FF0E840010ED1C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA96A523FF0E840010ED1C /* LoginViewController.swift */; };
+		E732C364EBA48EF234324602 /* Pods_PuzzleTrade_PuzzleTradeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9DB4CAE4D2EF2F28EE9DC8 /* Pods_PuzzleTrade_PuzzleTradeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D549B73F23E38FD20083D679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D549B72023E38FD00083D679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D549B72723E38FD00083D679;
+			remoteInfo = PuzzleTrade;
+		};
+		D549B74A23E38FD20083D679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D549B72023E38FD00083D679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D549B72723E38FD00083D679;
+			remoteInfo = PuzzleTrade;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016D2317205D34ED108F13C6 /* Pods-PuzzleTradeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTradeTests.debug.xcconfig"; path = "Target Support Files/Pods-PuzzleTradeTests/Pods-PuzzleTradeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		093A09AE1C7BE98D355F9272 /* Pods-PuzzleTrade-PuzzleTradeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTrade-PuzzleTradeUITests.debug.xcconfig"; path = "Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		290A8B780E08951A06E409C8 /* Pods-PuzzleTrade-PuzzleTradeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTrade-PuzzleTradeUITests.release.xcconfig"; path = "Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CBBA8E4FCFCD78BC16159FF /* Pods-PuzzleTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTrade.debug.xcconfig"; path = "Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade.debug.xcconfig"; sourceTree = "<group>"; };
+		3B235A7FDEB736657E8DFC60 /* Pods-PuzzleTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTrade.release.xcconfig"; path = "Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade.release.xcconfig"; sourceTree = "<group>"; };
+		44CBF8E2AB839CFA4DAB528B /* Pods_PuzzleTrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		823590ED3C0368ECC507A6A0 /* Pods-PuzzleTradeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleTradeTests.release.xcconfig"; path = "Target Support Files/Pods-PuzzleTradeTests/Pods-PuzzleTradeTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC9DB4CAE4D2EF2F28EE9DC8 /* Pods_PuzzleTrade_PuzzleTradeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTrade_PuzzleTradeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5069F7723EA691500A14449 /* TradePuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradePuzzleViewController.swift; sourceTree = "<group>"; };
+		D549B72823E38FD00083D679 /* PuzzleTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D549B72B23E38FD00083D679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D549B72D23E38FD00083D679 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D549B73223E38FD00083D679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D549B73423E38FD20083D679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D549B73723E38FD20083D679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D549B73923E38FD20083D679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D549B73E23E38FD20083D679 /* PuzzleTradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D549B74223E38FD20083D679 /* PuzzleTradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTradeTests.swift; sourceTree = "<group>"; };
+		D549B74423E38FD20083D679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D549B74923E38FD20083D679 /* PuzzleTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D549B74D23E38FD20083D679 /* PuzzleTradeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTradeUITests.swift; sourceTree = "<group>"; };
+		D549B74F23E38FD20083D679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlesViewController.swift; sourceTree = "<group>"; };
+		D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPuzzleViewController.swift; sourceTree = "<group>"; };
+		D566C64E23E9F22800B38765 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		D59338F4C04361ED09AEE730 /* Pods_PuzzleTradeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTradeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
+		D5CA96A523FF0E840010ED1C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D549B72523E38FD00083D679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57DEE2623E8D52E008C96FD /* LoginHelper in Frameworks */,
+				92045B96BA5A4BBF4D44FCB8 /* Pods_PuzzleTrade.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549B73B23E38FD20083D679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A106D7AD62329F7A76039E76 /* Pods_PuzzleTradeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549B74623E38FD20083D679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E732C364EBA48EF234324602 /* Pods_PuzzleTrade_PuzzleTradeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62F3C4BA166AC2C3171EC1E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBA8E4FCFCD78BC16159FF /* Pods-PuzzleTrade.debug.xcconfig */,
+				3B235A7FDEB736657E8DFC60 /* Pods-PuzzleTrade.release.xcconfig */,
+				093A09AE1C7BE98D355F9272 /* Pods-PuzzleTrade-PuzzleTradeUITests.debug.xcconfig */,
+				290A8B780E08951A06E409C8 /* Pods-PuzzleTrade-PuzzleTradeUITests.release.xcconfig */,
+				016D2317205D34ED108F13C6 /* Pods-PuzzleTradeTests.debug.xcconfig */,
+				823590ED3C0368ECC507A6A0 /* Pods-PuzzleTradeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CDB6A37F093A4A4A9A28699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44CBF8E2AB839CFA4DAB528B /* Pods_PuzzleTrade.framework */,
+				CC9DB4CAE4D2EF2F28EE9DC8 /* Pods_PuzzleTrade_PuzzleTradeUITests.framework */,
+				D59338F4C04361ED09AEE730 /* Pods_PuzzleTradeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D549B71F23E38FD00083D679 = {
+			isa = PBXGroup;
+			children = (
+				D549B72A23E38FD00083D679 /* PuzzleTrade */,
+				D549B74123E38FD20083D679 /* PuzzleTradeTests */,
+				D549B74C23E38FD20083D679 /* PuzzleTradeUITests */,
+				D549B72923E38FD00083D679 /* Products */,
+				62F3C4BA166AC2C3171EC1E3 /* Pods */,
+				6CDB6A37F093A4A4A9A28699 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D549B72923E38FD00083D679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D549B72823E38FD00083D679 /* PuzzleTrade.app */,
+				D549B73E23E38FD20083D679 /* PuzzleTradeTests.xctest */,
+				D549B74923E38FD20083D679 /* PuzzleTradeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D549B72A23E38FD00083D679 /* PuzzleTrade */ = {
+			isa = PBXGroup;
+			children = (
+				D549B72B23E38FD00083D679 /* AppDelegate.swift */,
+				D5CA96A523FF0E840010ED1C /* LoginViewController.swift */,
+				D549B72D23E38FD00083D679 /* SceneDelegate.swift */,
+				D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */,
+				D5069F7723EA691500A14449 /* TradePuzzleViewController.swift */,
+				D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */,
+				D549B73123E38FD00083D679 /* Main.storyboard */,
+				D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */,
+				D566C64E23E9F22800B38765 /* Puzzle.swift */,
+				D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */,
+				D549B73423E38FD20083D679 /* Assets.xcassets */,
+				D549B73623E38FD20083D679 /* LaunchScreen.storyboard */,
+				D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */,
+				D549B73923E38FD20083D679 /* Info.plist */,
+			);
+			path = PuzzleTrade;
+			sourceTree = "<group>";
+		};
+		D549B74123E38FD20083D679 /* PuzzleTradeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D549B74223E38FD20083D679 /* PuzzleTradeTests.swift */,
+				D549B74423E38FD20083D679 /* Info.plist */,
+			);
+			path = PuzzleTradeTests;
+			sourceTree = "<group>";
+		};
+		D549B74C23E38FD20083D679 /* PuzzleTradeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D549B74D23E38FD20083D679 /* PuzzleTradeUITests.swift */,
+				D549B74F23E38FD20083D679 /* Info.plist */,
+			);
+			path = PuzzleTradeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D549B72723E38FD00083D679 /* PuzzleTrade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D549B75223E38FD20083D679 /* Build configuration list for PBXNativeTarget "PuzzleTrade" */;
+			buildPhases = (
+				2F8D8B3D75E0AC5C25BDAD6E /* [CP] Check Pods Manifest.lock */,
+				D549B72423E38FD00083D679 /* Sources */,
+				D549B72523E38FD00083D679 /* Frameworks */,
+				D549B72623E38FD00083D679 /* Resources */,
+				23E187CAC5FFD5B191120879 /* [CP] Embed Pods Frameworks */,
+				3B15ECDFF6DC93FEFA8984E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuzzleTrade;
+			packageProductDependencies = (
+				D57DEE2523E8D52E008C96FD /* LoginHelper */,
+			);
+			productName = PuzzleTrade;
+			productReference = D549B72823E38FD00083D679 /* PuzzleTrade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D549B73D23E38FD20083D679 /* PuzzleTradeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D549B75523E38FD20083D679 /* Build configuration list for PBXNativeTarget "PuzzleTradeTests" */;
+			buildPhases = (
+				5A0A8276131F6380A9D1DEAA /* [CP] Check Pods Manifest.lock */,
+				D549B73A23E38FD20083D679 /* Sources */,
+				D549B73B23E38FD20083D679 /* Frameworks */,
+				D549B73C23E38FD20083D679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D549B74023E38FD20083D679 /* PBXTargetDependency */,
+			);
+			name = PuzzleTradeTests;
+			productName = PuzzleTradeTests;
+			productReference = D549B73E23E38FD20083D679 /* PuzzleTradeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D549B74823E38FD20083D679 /* PuzzleTradeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D549B75823E38FD20083D679 /* Build configuration list for PBXNativeTarget "PuzzleTradeUITests" */;
+			buildPhases = (
+				2CA48EAD7AF1D44F218F1F47 /* [CP] Check Pods Manifest.lock */,
+				D549B74523E38FD20083D679 /* Sources */,
+				D549B74623E38FD20083D679 /* Frameworks */,
+				D549B74723E38FD20083D679 /* Resources */,
+				886EC0AD4531F51E2B3B3741 /* [CP] Embed Pods Frameworks */,
+				C9CF7AEA80ED2E17A22071AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D549B74B23E38FD20083D679 /* PBXTargetDependency */,
+			);
+			name = PuzzleTradeUITests;
+			productName = PuzzleTradeUITests;
+			productReference = D549B74923E38FD20083D679 /* PuzzleTradeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D549B72023E38FD00083D679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Leandro Wauters";
+				TargetAttributes = {
+					D549B72723E38FD00083D679 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					D549B73D23E38FD20083D679 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D549B72723E38FD00083D679;
+					};
+					D549B74823E38FD20083D679 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D549B72723E38FD00083D679;
+					};
+				};
+			};
+			buildConfigurationList = D549B72323E38FD00083D679 /* Build configuration list for PBXProject "PuzzleTrade" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D549B71F23E38FD00083D679;
+			packageReferences = (
+				D57DEE2423E8D52E008C96FD /* XCRemoteSwiftPackageReference "LoginHelper" */,
+			);
+			productRefGroup = D549B72923E38FD00083D679 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D549B72723E38FD00083D679 /* PuzzleTrade */,
+				D549B73D23E38FD20083D679 /* PuzzleTradeTests */,
+				D549B74823E38FD20083D679 /* PuzzleTradeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D549B72623E38FD00083D679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D549B73823E38FD20083D679 /* LaunchScreen.storyboard in Resources */,
+				D5CA96A223FF08910010ED1C /* GoogleService-Info.plist in Resources */,
+				D549B73523E38FD20083D679 /* Assets.xcassets in Resources */,
+				D5CA96A423FF0A440010ED1C /* LoginStoryBoard.storyboard in Resources */,
+				D549B73323E38FD00083D679 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549B73C23E38FD20083D679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549B74723E38FD20083D679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E187CAC5FFD5B191120879 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CA48EAD7AF1D44F218F1F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzleTrade-PuzzleTradeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F8D8B3D75E0AC5C25BDAD6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzleTrade-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B15ECDFF6DC93FEFA8984E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade/Pods-PuzzleTrade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A0A8276131F6380A9D1DEAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzleTradeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886EC0AD4531F51E2B3B3741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9CF7AEA80ED2E17A22071AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuzzleTrade-PuzzleTradeUITests/Pods-PuzzleTrade-PuzzleTradeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D549B72423E38FD00083D679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D566C64F23E9F22800B38765 /* Puzzle.swift in Sources */,
+				D5069F7823EA691500A14449 /* TradePuzzleViewController.swift in Sources */,
+				D549B72C23E38FD00083D679 /* AppDelegate.swift in Sources */,
+				D549B72E23E38FD00083D679 /* SceneDelegate.swift in Sources */,
+				D5CA96A623FF0E840010ED1C /* LoginViewController.swift in Sources */,
+				D5CA96A023FF05010010ED1C /* UIViewController+Extension.swift in Sources */,
+				D566C64D23E9F17B00B38765 /* DetailPuzzleViewController.swift in Sources */,
+				D566C64B23E9F12800B38765 /* PuzzlesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549B73A23E38FD20083D679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D549B74323E38FD20083D679 /* PuzzleTradeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549B74523E38FD20083D679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D549B74E23E38FD20083D679 /* PuzzleTradeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D549B74023E38FD20083D679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D549B72723E38FD00083D679 /* PuzzleTrade */;
+			targetProxy = D549B73F23E38FD20083D679 /* PBXContainerItemProxy */;
+		};
+		D549B74B23E38FD20083D679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D549B72723E38FD00083D679 /* PuzzleTrade */;
+			targetProxy = D549B74A23E38FD20083D679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D549B73123E38FD00083D679 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D549B73223E38FD00083D679 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D549B73623E38FD20083D679 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D549B73723E38FD20083D679 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D549B75023E38FD20083D679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D549B75123E38FD20083D679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D549B75323E38FD20083D679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBBA8E4FCFCD78BC16159FF /* Pods-PuzzleTrade.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5CF8LT37;
+				INFOPLIST_FILE = PuzzleTrade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wauters.PuzzleTrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D549B75423E38FD20083D679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B235A7FDEB736657E8DFC60 /* Pods-PuzzleTrade.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5CF8LT37;
+				INFOPLIST_FILE = PuzzleTrade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wauters.PuzzleTrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D549B75623E38FD20083D679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016D2317205D34ED108F13C6 /* Pods-PuzzleTradeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5CF8LT37;
+				INFOPLIST_FILE = PuzzleTradeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wauters.PuzzleTradeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzleTrade.app/PuzzleTrade";
+			};
+			name = Debug;
+		};
+		D549B75723E38FD20083D679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823590ED3C0368ECC507A6A0 /* Pods-PuzzleTradeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5CF8LT37;
+				INFOPLIST_FILE = PuzzleTradeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wauters.PuzzleTradeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzleTrade.app/PuzzleTrade";
+			};
+			name = Release;
+		};
+		D549B75923E38FD20083D679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 093A09AE1C7BE98D355F9272 /* Pods-PuzzleTrade-PuzzleTradeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5CF8LT37;
+				INFOPLIST_FILE = PuzzleTradeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wauters.PuzzleTradeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuzzleTrade;
+			};
+			name = Debug;
+		};
+		D549B75A23E38FD20083D679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290A8B780E08951A06E409C8 /* Pods-PuzzleTrade-PuzzleTradeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5CF8LT37;
+				INFOPLIST_FILE = PuzzleTradeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wauters.PuzzleTradeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuzzleTrade;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D549B72323E38FD00083D679 /* Build configuration list for PBXProject "PuzzleTrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D549B75023E38FD20083D679 /* Debug */,
+				D549B75123E38FD20083D679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D549B75223E38FD20083D679 /* Build configuration list for PBXNativeTarget "PuzzleTrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D549B75323E38FD20083D679 /* Debug */,
+				D549B75423E38FD20083D679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D549B75523E38FD20083D679 /* Build configuration list for PBXNativeTarget "PuzzleTradeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D549B75623E38FD20083D679 /* Debug */,
+				D549B75723E38FD20083D679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D549B75823E38FD20083D679 /* Build configuration list for PBXNativeTarget "PuzzleTradeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D549B75923E38FD20083D679 /* Debug */,
+				D549B75A23E38FD20083D679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D57DEE2423E8D52E008C96FD /* XCRemoteSwiftPackageReference "LoginHelper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/leandrowauters/LoginHelper";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D57DEE2523E8D52E008C96FD /* LoginHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D57DEE2423E8D52E008C96FD /* XCRemoteSwiftPackageReference "LoginHelper" */;
+			productName = LoginHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D549B72023E38FD00083D679 /* Project object */;
+}

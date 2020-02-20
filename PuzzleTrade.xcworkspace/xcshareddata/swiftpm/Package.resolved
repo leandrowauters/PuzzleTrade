@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LoginHelper",
+        "repositoryURL": "https://github.com/leandrowauters/LoginHelper",
+        "state": {
+          "branch": "master",
+          "revision": "af679b2cdc3f4a37c06cc83bf4460507ef83fc14",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
