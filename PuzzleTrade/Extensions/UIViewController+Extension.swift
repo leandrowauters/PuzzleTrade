@@ -53,4 +53,14 @@ extension UIViewController {
         
         view.transform = CGAffineTransform(translationX: 0, y: -keyboardFrame.height + 150)
     }
+    
+    public func segueToMainVC(userId: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tab = storyboard.instantiateViewController(withIdentifier: "tab") as! UITabBarController
+        AuthService.userId = userId
+        modalPresentationStyle = .fullScreen
+        present(tab, animated: true)
+    }
+
+    
 }

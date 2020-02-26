@@ -8,10 +8,14 @@
 
 import UIKit
 import Kingfisher
+import Firebase
 class PuzzlesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    private var listener: ListenerRegistration!
+    
     var puzzles = [Puzzle]() {
         didSet {
             DispatchQueue.main.async {
@@ -20,6 +24,8 @@ class PuzzlesViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+
+    var userId: String!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,12 +34,27 @@ class PuzzlesViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        let puzzle = Puzzle(name: "House", numberOfPieces: 1000, brand: "Educa", photo: "https://firebasestorage.googleapis.com/v0/b/eliteapp-cb035.appspot.com/o/images%2FBOIkUdVEGlghNHFq7JQpxBs7mG72?alt=media&token=13953e98-a944-4162-bb7f-9c99521a4a1f", postedBy: "NA", postedDate: "NA", reviewScore: 98)
-        let puzzle2 = Puzzle(name: "House", numberOfPieces: 1000, brand: "Educa", photo: "https://firebasestorage.googleapis.com/v0/b/eliteapp-cb035.appspot.com/o/images%2FBOIkUdVEGlghNHFq7JQpxBs7mG72?alt=media&token=13953e98-a944-4162-bb7f-9c99521a4a1f", postedBy: "N/A", postedDate: "N/A", reviewScore: 98)
-        puzzles.append(puzzle)
-        puzzles.append(puzzle2)
-
+        userId = AuthService.userId
+        fetchUserPuzzles()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        listener.remove()
+    }
+    
+    private func fetchUserPuzzles() {
+        listener = DBService.fetchUserPuzzles(userId: AuthService.userId, completion: { (error, puzzles) in
+            if let error = error {
+                self.showAlert(title: "Error fetching puzzles", message: error.localizedDescription)
+                self.activityIndicator.stopAnimating()
+            }
+            if let puzzles = puzzles {
+                self.puzzles = puzzles
+                self.activityIndicator.stopAnimating()
+            }
+        })
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedPath = tableView.indexPathForSelectedRow else { return }

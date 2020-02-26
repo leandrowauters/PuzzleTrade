@@ -20,7 +20,14 @@
 		D566C64B23E9F12800B38765 /* PuzzlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */; };
 		D566C64D23E9F17B00B38765 /* DetailPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */; };
 		D566C64F23E9F22800B38765 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566C64E23E9F22800B38765 /* Puzzle.swift */; };
+		D5789AC22401D73600DF6E3C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5789AC12401D73600DF6E3C /* CreateAccountViewController.swift */; };
 		D57DEE2623E8D52E008C96FD /* LoginHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D57DEE2523E8D52E008C96FD /* LoginHelper */; };
+		D5A817792401C116002E7599 /* Authservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A817782401C116002E7599 /* Authservice.swift */; };
+		D5A8177B2401C146002E7599 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A8177A2401C146002E7599 /* DBService.swift */; };
+		D5A8177D2401C690002E7599 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A8177C2401C690002E7599 /* Date+Extension.swift */; };
+		D5A8177F2401C6DD002E7599 /* PuzzleTradeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A8177E2401C6DD002E7599 /* PuzzleTradeUser.swift */; };
+		D5A817812401C7C5002E7599 /* CollectionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A817802401C7C5002E7599 /* CollectionKeys.swift */; };
+		D5A817832401CD26002E7599 /* DBService+PuzzleTradeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A817822401CD26002E7599 /* DBService+PuzzleTradeUser.swift */; };
 		D5CA96A023FF05010010ED1C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */; };
 		D5CA96A223FF08910010ED1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */; };
 		D5CA96A423FF0A440010ED1C /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */; };
@@ -71,7 +78,14 @@
 		D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlesViewController.swift; sourceTree = "<group>"; };
 		D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPuzzleViewController.swift; sourceTree = "<group>"; };
 		D566C64E23E9F22800B38765 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		D5789AC12401D73600DF6E3C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		D59338F4C04361ED09AEE730 /* Pods_PuzzleTradeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTradeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A817782401C116002E7599 /* Authservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authservice.swift; sourceTree = "<group>"; };
+		D5A8177A2401C146002E7599 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		D5A8177C2401C690002E7599 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D5A8177E2401C6DD002E7599 /* PuzzleTradeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTradeUser.swift; sourceTree = "<group>"; };
+		D5A817802401C7C5002E7599 /* CollectionKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionKeys.swift; sourceTree = "<group>"; };
+		D5A817822401CD26002E7599 /* DBService+PuzzleTradeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBService+PuzzleTradeUser.swift"; sourceTree = "<group>"; };
 		D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
@@ -156,19 +170,16 @@
 			isa = PBXGroup;
 			children = (
 				D549B72B23E38FD00083D679 /* AppDelegate.swift */,
-				D5CA96A523FF0E840010ED1C /* LoginViewController.swift */,
-				D549B72D23E38FD00083D679 /* SceneDelegate.swift */,
-				D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */,
-				D5069F7723EA691500A14449 /* TradePuzzleViewController.swift */,
-				D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */,
-				D549B73123E38FD00083D679 /* Main.storyboard */,
-				D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */,
-				D566C64E23E9F22800B38765 /* Puzzle.swift */,
-				D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */,
-				D549B73423E38FD20083D679 /* Assets.xcassets */,
-				D549B73623E38FD20083D679 /* LaunchScreen.storyboard */,
-				D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */,
 				D549B73923E38FD20083D679 /* Info.plist */,
+				D5789ABA2401D52A00DF6E3C /* LoginViewControllers */,
+				D5789AB92401D51500DF6E3C /* Other */,
+				D5789ABB2401D54D00DF6E3C /* MainViewControllers */,
+				D5789ABC2401D56100DF6E3C /* Extensions */,
+				D5789ABD2401D56E00DF6E3C /* Storyboards */,
+				D5789ABE2401D57C00DF6E3C /* Models */,
+				D5789ABF2401D58D00DF6E3C /* CollectionKeys */,
+				D5789AC02401D59C00DF6E3C /* Firebase */,
+				D549B73423E38FD20083D679 /* Assets.xcassets */,
 			);
 			path = PuzzleTrade;
 			sourceTree = "<group>";
@@ -189,6 +200,80 @@
 				D549B74F23E38FD20083D679 /* Info.plist */,
 			);
 			path = PuzzleTradeUITests;
+			sourceTree = "<group>";
+		};
+		D5789AB92401D51500DF6E3C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D549B72D23E38FD00083D679 /* SceneDelegate.swift */,
+				D549B73623E38FD20083D679 /* LaunchScreen.storyboard */,
+				D5CA96A123FF08910010ED1C /* GoogleService-Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D5789ABA2401D52A00DF6E3C /* LoginViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5CA96A523FF0E840010ED1C /* LoginViewController.swift */,
+				D5789AC12401D73600DF6E3C /* CreateAccountViewController.swift */,
+			);
+			path = LoginViewControllers;
+			sourceTree = "<group>";
+		};
+		D5789ABB2401D54D00DF6E3C /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D566C64A23E9F12800B38765 /* PuzzlesViewController.swift */,
+				D5069F7723EA691500A14449 /* TradePuzzleViewController.swift */,
+				D566C64C23E9F17B00B38765 /* DetailPuzzleViewController.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		D5789ABC2401D56100DF6E3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5CA969F23FF05010010ED1C /* UIViewController+Extension.swift */,
+				D5A8177C2401C690002E7599 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D5789ABD2401D56E00DF6E3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D549B73123E38FD00083D679 /* Main.storyboard */,
+				D5CA96A323FF0A440010ED1C /* LoginStoryBoard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5789ABE2401D57C00DF6E3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D566C64E23E9F22800B38765 /* Puzzle.swift */,
+				D5A8177E2401C6DD002E7599 /* PuzzleTradeUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5789ABF2401D58D00DF6E3C /* CollectionKeys */ = {
+			isa = PBXGroup;
+			children = (
+				D5A817802401C7C5002E7599 /* CollectionKeys.swift */,
+			);
+			path = CollectionKeys;
+			sourceTree = "<group>";
+		};
+		D5789AC02401D59C00DF6E3C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D5A817782401C116002E7599 /* Authservice.swift */,
+				D5A8177A2401C146002E7599 /* DBService.swift */,
+				D5A817822401CD26002E7599 /* DBService+PuzzleTradeUser.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,11 +559,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5789AC22401D73600DF6E3C /* CreateAccountViewController.swift in Sources */,
 				D566C64F23E9F22800B38765 /* Puzzle.swift in Sources */,
+				D5A8177D2401C690002E7599 /* Date+Extension.swift in Sources */,
+				D5A8177B2401C146002E7599 /* DBService.swift in Sources */,
+				D5A817832401CD26002E7599 /* DBService+PuzzleTradeUser.swift in Sources */,
+				D5A817812401C7C5002E7599 /* CollectionKeys.swift in Sources */,
 				D5069F7823EA691500A14449 /* TradePuzzleViewController.swift in Sources */,
 				D549B72C23E38FD00083D679 /* AppDelegate.swift in Sources */,
+				D5A8177F2401C6DD002E7599 /* PuzzleTradeUser.swift in Sources */,
 				D549B72E23E38FD00083D679 /* SceneDelegate.swift in Sources */,
 				D5CA96A623FF0E840010ED1C /* LoginViewController.swift in Sources */,
+				D5A817792401C116002E7599 /* Authservice.swift in Sources */,
 				D5CA96A023FF05010010ED1C /* UIViewController+Extension.swift in Sources */,
 				D566C64D23E9F17B00B38765 /* DetailPuzzleViewController.swift in Sources */,
 				D566C64B23E9F12800B38765 /* PuzzlesViewController.swift in Sources */,

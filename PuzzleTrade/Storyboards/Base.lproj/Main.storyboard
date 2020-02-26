@@ -10,7 +10,7 @@
         <!--Puzzles-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PuzzlesViewController" customModule="PuzzleTrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PuzzlesViewController" id="BYZ-38-t0r" customClass="PuzzlesViewController" customModule="PuzzleTrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,18 +49,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="sCU-Lb-0Kh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oq0-ZI-Jnc" secondAttribute="trailing" id="UTw-CH-pOu"/>
+                            <constraint firstItem="sCU-Lb-0Kh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W1E-av-gVK"/>
+                            <constraint firstItem="sCU-Lb-0Kh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XBs-iJ-zLL"/>
                             <constraint firstItem="oq0-ZI-Jnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZZl-ns-TjX"/>
+                            <constraint firstAttribute="bottom" secondItem="sCU-Lb-0Kh" secondAttribute="bottom" id="fUA-dF-hMT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oq0-ZI-Jnc" secondAttribute="bottom" id="iv0-0d-Ufk"/>
+                            <constraint firstItem="sCU-Lb-0Kh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lK6-UZ-Kgh"/>
                             <constraint firstItem="oq0-ZI-Jnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tGO-gH-X2x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Puzzles" id="47W-qt-QMZ"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="sCU-Lb-0Kh" id="iyU-ua-Zhc"/>
                         <outlet property="tableView" destination="oq0-ZI-Jnc" id="c5p-g6-emS"/>
                     </connections>
                 </viewController>
@@ -222,7 +231,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="TRT-FF-22x">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r0C-Y4-omE" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tab" automaticallyAdjustsScrollViewInsets="NO" id="r0C-Y4-omE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A0T-rA-v8A">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

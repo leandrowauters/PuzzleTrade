@@ -27,4 +27,14 @@ class Puzzle {
         self.postedDate = postedDate
         self.reviewScore = reviewScore
     }
+    
+    init(dict: [String: Any]) {
+        self.name = dict[PuzzleKeys.nameKey] as? String ?? ""
+        self.numberOfPieces = dict[PuzzleKeys.numberOfPiecesKey] as? Int ?? 0
+        self.brand = dict[PuzzleKeys.brandKey] as? String ?? ""
+        self.photo = dict[PuzzleKeys.photoKey] as? String ?? ""
+        self.postedBy = dict[PuzzleKeys.postedByKey] as? String ?? ""
+        self.postedDate = dict[PuzzleKeys.postedDateKey] as? String ?? ""
+        self.reviewScore = dict[PuzzleKeys.reviewScoreKey] as? Int ?? 0
+    }
 }

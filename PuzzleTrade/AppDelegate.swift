@@ -19,24 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        window = UIWindow(frame: UIScreen.main.bounds)
-        if let user = AppDelegate.authservice.getCurrentUser() {
-            let loadingScreen = LoadingViewController(nibName: nil, bundle: nil, gamerID: user.uid)
-
-            window = UIWindow(frame: UIScreen.main.bounds)
-            window?.rootViewController = loadingScreen
-            
-        } else {
-            let storyboard = UIStoryboard(name: "LoginView", bundle: nil)
-            let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            window?.rootViewController = UINavigationController(rootViewController: loginViewController)
-        }
-        window?.makeKeyAndVisible()
         return true
     }
 
     // MARK: UISceneSession Lifecycle
 
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
